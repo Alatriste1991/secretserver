@@ -14,7 +14,7 @@ PHP 7.4+ (recommended 8+)
 * Configure database connection and baseurl
 
 ## How to use
-*You can add secret via following mode:
+* You can add secret via following mode:
 
 curl --location 'http://yourdomain.com/v1/secret' \
 --header 'Content-Type: application/json' \
@@ -25,7 +25,7 @@ curl --location 'http://yourdomain.com/v1/secret' \
 
  You can communicate json or xml format, and you can add your secret (string), expiration time in minutes (int) and the maximum number of views (int). After than you get a hash, which you can use to get back your secret.
 
-*If you want to get your secret, you can take it following mode:
+* If you want to get your secret, you can take it following mode:
 
 curl --location 'http://yourdomain.com/v1/secret/{hash}' \
 --header 'Content-Type: application/json' \

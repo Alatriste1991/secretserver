@@ -19,9 +19,9 @@ PHP 7.4+ (recommended 8+)
 curl --location 'http://yourdomain.com/v1/secret' \
 --header 'Content-Type: application/json' \
 --header 'accept: application/json' \
---form 'secret="Lorem ipsum sit dolor amet"' \
---form 'expireAfterViews="10"' \
---form 'expireAfter="20"
+--form 'secret="{secret}"' \
+--form 'expireAfterViews="{numberofallowedviews}"' \
+--form 'expireAfter="{expirationtime}"
 
  You can communicate json or xml format, and you can add your secret (string), expiration time in minutes (int) and the maximum number of views (int). After than you get a hash, which you can use to get back your secret.
 
